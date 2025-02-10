@@ -50,6 +50,7 @@ header h1 {
 
 /*botão para entrar no projeto*/
 .myButton {
+    margin-top: 25px;
 	-moz-box-shadow: 1px 10px 14px -4px #3e7327;
 	-webkit-box-shadow: 1px 10px 14px -4px #3e7327;
 	box-shadow: 1px 10px 14px -4px #3e7327;
