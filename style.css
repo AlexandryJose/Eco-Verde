@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 
 /*cabeçalho*/
 header {
@@ -98,7 +101,10 @@ body{
     
 }
 main {
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;  
+    display: flex;
+    height:37rem;
+      
 }
 #bemvindo{
     text-align: center;
@@ -111,6 +117,7 @@ main {
     font-size: 1.5rem;
     gap: 1rem;
     padding: 1rem;
+    
 }
 #botão_projeto {
     margin-top: 2rem;
