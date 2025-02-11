@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Hairline&family=Geostar&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Markazi+Text:wght@400..700&family=Monofett&family=Revalia&family=Rubik+Dirt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+/*cabeçalho*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkolivegreen;
+    width: 100%;
+    height: 88px;
+    color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    padding-left: 10px;
+    font-family: "Rubik Dirt", serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.container {
+    margin-top: center;
+    margin-right: 10px;
+}
+
+.container a {
+    text-decoration: none;
+    color: bisque;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+.container a:hover {
+    border: 1px solid bisque;
+    border-radius: 3px;
+    padding: 5px;
+    color: darkolivegreen;
+    background-color: bisque;
+    font-size: 25px;
+    
+}
