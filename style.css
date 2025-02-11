@@ -36,19 +36,25 @@ header h1 {
 
 .container a {
     text-decoration: none;
+    position: relative;
     color: bisque;
     font-size: 25px;
     padding-right: 15px;
 }
 
-.container a:hover {
-    border: 1px solid bisque;
-    border-radius: 3px;
-    padding: 5px;
-    color: darkolivegreen;
-    background-color: bisque;
-    font-size: 25px;
-    
+.container a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: bisque;
+  transition: width 0.3s ease-in-out;
+}
+
+.container a:hover::after {
+  width: 100%;
 }
 
 /*botão para entrar no projeto*/
