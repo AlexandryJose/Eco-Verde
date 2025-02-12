@@ -30,11 +30,11 @@ header h1 {
     text-decoration: none;
 }
 #eco h1:hover{
-    border: 1px solid bisque;
+    border: 1px solid rgb(255, 228, 196);
     border-radius: 3px;
     padding: 5px;
     color: darkolivegreen;
-    background-color: bisque;
+    background-color: rgb(255, 228, 196);
 }
 
 .container {
@@ -44,27 +44,35 @@ header h1 {
 
 .container a {
     text-decoration: none;
+    position: relative;
     color: bisque;
     font-size: 25px;
     padding-right: 15px;
 }
+.container a::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: bisque;
+  transition: width 0.3s ease-in-out;
+}
 
-.container a:hover {
-    border: 1px solid bisque;
-    border-radius: 3px;
-    padding: 5px;
-    color: darkolivegreen;
-    background-color: bisque;
-    font-size: 25px;
-    
+.container a:hover::after {
+  width: 100%;
 }
 
 /*corpo*/
 body{
     background-color:rgba(128, 128, 0, 0.288);
-    background-image: url(/imagem/planta\ 2.png);
+    background-image: url(/imagem/imagemde\ fundo.png);
     font-family: 'Lato', sans-serif;
     
+}
+main{
+   
 } 
   .link_wrapper{
     position: relative;
@@ -129,7 +137,7 @@ body{
 .box1 {
     background-color: rgba(0, 0, 0, 0.589);
     width: 400px;
-
+    background-image: url(/imagem/fundo\ box1.png);
     border: 3px solid black;
     border-radius: 20px 5px;
     padding: 5%;
