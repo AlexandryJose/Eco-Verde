@@ -60,7 +60,7 @@ body{
     background-color:rgba(128, 128, 0, 0.288);
     background-image: url(/imagem/imagemde\ fundo.png);
     font-family: 'Lato', sans-serif;
-    
+    height: 30rem;
 }
 
   .link_wrapper{

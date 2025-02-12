@@ -11,6 +11,7 @@ html{
 
 /*cabeçalho*/
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -109,7 +110,8 @@ body{
 main {
     font-family: Arial, Helvetica, sans-serif;  
     display: flex;
-    height:37rem;
+    height:45rem;
+    
       
 }
 #bemvindo{
@@ -123,11 +125,17 @@ main {
     font-size: 1.5rem;
     gap: 1rem;
     padding: 1rem;
+    margin-top: 9rem;
     
+}
+#bemvindo p{
+    text-align: justify;
 }
 #botão_projeto {
     margin-top: 2rem;
         
+
+
 }
 
 

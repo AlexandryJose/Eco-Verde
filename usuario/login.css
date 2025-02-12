@@ -72,9 +72,9 @@ body{
     
 }
 
-  .link_wrapper{
+.link_wrapper{
     position: relative;
-  }
+}
   
   #entrar{
     display: block;
