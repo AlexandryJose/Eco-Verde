@@ -17,13 +17,13 @@ header {
     align-items: center;
     background-color: darkolivegreen;
     width: 100%;
-    height: 88px;
+    height: 5rem;
     color: bisque;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 header h1 {
-    padding-left: 10px;
+    padding-left: 2rem;
     font-family: "Rubik Dirt", serif;
     font-weight: 400;
     font-style: normal;
@@ -34,6 +34,9 @@ header h1 {
 .container {
     margin-top: center;
     margin-right: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .container a {
@@ -64,6 +67,7 @@ body{
     background-color:darkolivegreen;
     background-image: url(/imagem/imgajuda.png);
     height: 100%;
+    max-width: 100%;
 }
 main {
     height: 50%;
