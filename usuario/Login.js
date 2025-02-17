@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const senha = senhaInput.value;  
 
         // Simulação de credenciais válidas
-        const emailValido = "usuario@example.com";
+        const emailValido = "professoroak@gmail.com";
         const senhaValida = "senha123";
 
         if (email === emailValido && senha === senhaValida) {
