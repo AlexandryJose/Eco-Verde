@@ -129,7 +129,7 @@ body{
 .container1{
     display: flex;
     justify-content: center;
-    
+    margin: 2px;
     align-items: center;
     height: 100vh;
 }
@@ -168,5 +168,12 @@ input{
     margin-top: 1.2rem;
     border-radius: 10px 5px;
     outline: none;
+
+}
+a{
+  text-decoration: none;
+  color: rgb(172, 149, 149);
+ 
+  
 
 }

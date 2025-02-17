@@ -55,6 +55,7 @@ header h1 {
 .container a:hover::after {
   width: 100%;
 }
+/*Configuração  geral */
 body{
     background-color:darkolivegreen;
     background-image: url(/imagem/imagemde\ fundo.png);
@@ -65,6 +66,8 @@ body{
 
   .link_wrapper{
     position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   #entrar{
@@ -125,8 +128,7 @@ body{
 .box1 {
     background-color: rgba(0, 0, 0, 0.589);
     width: 400px;
-    height: 95%;
-    background-image: url(/imagem/plantas4.png);
+    height: 100%;
     border: 3px solid black;
     border-radius: 20px 5px;
     padding: 5%;
@@ -136,6 +138,7 @@ body{
     text-align: center;
     margin-top: 15rem;
     margin-bottom: 15rem;
+    align-items: center;
 }
 
 form{
@@ -149,7 +152,7 @@ hr {
 
 form p{
     font-size: 10px;
-
+    color:rgb(18, 214, 18);
 }
 input{
     padding: 0.5rem;
@@ -159,4 +162,9 @@ input{
     border-radius: 10px 5px;
     outline: none;
 
+}
+
+.box1 a{
+    text-decoration: none;
+    color: rgb(235, 240, 235);
 }
