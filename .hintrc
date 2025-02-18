@@ -8,6 +8,15 @@
       {
         "label": "off"
       }
-    ]
+    ],
+    "no-inline-styles": "off",
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-active": "off"
+      }
+    ],
+    "button-type": "off",
+    "disown-opener": "off"
   }
 }

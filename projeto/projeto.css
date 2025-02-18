@@ -1,0 +1,212 @@
+/* link de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Hairline&family=Geostar&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Markazi+Text:wght@400..700&family=Monofett&family=Revalia&family=Rubik+Dirt&family=Rubik:ital,wght@0,300..900;1,300..900&family=Share+Tech+Mono&family=Silkscreen:wght@400;700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+/* fim de link fontes */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5em
+}
+html{
+    height: 100%;
+}
+
+
+/* cabeçalho */
+header {
+    background-color: darkolivegreen;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:90px;
+}
+
+header h1 {
+    padding-left: 2rem;
+    font-family: "Rubik Dirt", serif;
+    font-weight: 400;
+    font-size: 4rem;
+    font-style: normal;
+    color: bisque;
+}
+
+#ecoverde {
+    text-decoration: none;
+    position: relative;
+    color: bisque;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+#ecoverde ::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background-color: bisque;
+  transition: width 0.3s ease-in-out;
+}
+
+#ecoverde :hover::after {
+  width: 100%;
+}
+
+/* Fim do cabeçalho */
+
+/* Corpo */
+
+body {
+    width: auto;
+    height: 100%;
+    background-color:rgba(128, 128, 0, 0.288);
+    font-family: "Saira", serif;
+    font-optical-sizing: auto;
+
+}
+
+.Seção01{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+}
+.Seção01 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 250%;
+    padding-right: 80px;
+    padding-left: 90px;
+    margin-bottom: 20px;
+}
+.Seção01 p{
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+hr {
+    width: 50%;
+}
+.img1 p{
+    font-size: 2rem;
+}
+
+
+#titulo2{
+    font-size: 3.3rem;
+    color: darkolivegreen;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cadastro_plantas {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+}
+.cadastro_plantas h2, h3 {
+    color: darkolivegreen;
+}
+.cadastro_plantas label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.cadastro_plantas input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.cadastro_plantas button {
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.cadastro_plantas button:hover {
+    background-color: #1e4d36;
+}
+.cadastro_plantas table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.cadastro_plantas th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+.cadastro_plantas th {
+    background-color: #2c6e49;
+    color: white;
+}
+
+/* diario de cultivo */
+.container1 {
+    max-width: 400px;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container1 h2 {
+    text-align: center;
+    color: darkolivegreen;
+}
+.container1 input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container1 button {
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.container1 button:hover {
+    background-color: #45a049;
+}
+.entry {
+    background: #e8f5e9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.container1 img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+/* fim do diario de cultivo */
+
+/* Fim do Corpo */
