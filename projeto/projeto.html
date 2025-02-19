@@ -14,33 +14,13 @@
         <img src="/imagem/favicon.ico" alt="" width="130rem">
         <a href="/index.html" target="_blank" rel="noopener noreferrer" id="ecoverde"><h1>Eco Verde</h1></a>
     </header>
-
+    
     <main>
-        <section class="Seção01">
-           <h1> Projeto de Monitoramento, Irrigação e Conservação </h1>
-            <div class="Conteudo-Seção01">
+      
 
-
-            <p>
-
-                Este projeto tem como objetivo acompanhar o crescimento de mudas de espécies vegetais ameaçadas de extinção por meio de um sistema de irrigação regular e registro fotográfico periódico. A iniciativa visa não apenas garantir o desenvolvimento dessas plantas, mas também contribuir para sua preservação e recuperação em ambientes naturais.
-                
-                Os pesquisadores envolvidos serão responsáveis por regar as mudas conforme um cronograma pré-estabelecido, assegurando condições ideais para seu crescimento sustentável. Além disso, imagens das plantas serão capturadas em diferentes estágios de desenvolvimento, permitindo uma análise detalhada de sua adaptação e identificando eventuais necessidades de ajuste na irrigação ou no manejo.
-                
-                O projeto também reforça a importância da conservação ambiental, promovendo práticas responsáveis de cultivo e o uso eficiente dos recursos naturais. Os dados coletados servirão para pesquisas científicas sobre a regeneração de espécies ameaçadas e auxiliarão na formulação de estratégias para a recuperação de áreas degradadas e a manutenção da biodiversidade.
-            </p>
-
-
-           </div>
-            
-
-        </section>
+        <h2 id="titulo2">Catalogue aqui suas plantas!<h2>
         
-        
-        <h2 id="titulo2">Seja um pesquisador</h2>
-
-     
-        <div class="container">
+            <div class="container">
             <div class="cadastro_plantas">
                 <h2>Cadastro de Plantas</h2>
                 <label >Nome cientifico : <input type="text" id="nome-cientifico"> </label>
@@ -52,7 +32,7 @@
             </div>
              
             <div class="container1">
-                <h2>Diário de Cultivo</h2>
+                <h2 >Diário de Cultivo</h2>
                 <input type="date" id="date">
                 <textarea id="notes" placeholder="Escreva suas observações..."></textarea>
                 <input type="file" id="photo" accept="image/*">
@@ -60,18 +40,49 @@
                 <div id="entries"></div>
             </div>
         </div>
+
+   
+                
+        <h2 id="titulo2">Catalogue aqui suas Árvores    </h2>
+
+                
+        <div class="container02">
+            <div class="cadastroArvores">
+                <h2>Cadastro de Arvores</h2>
+                <label >Especie : <input type="text" id="especie"></label>
+                <label >Idade: <input type="text"  id="idade"></label>
+                <label >Altura: <input type="text" id="Altura" ></label>
+                <label >Diametro do tronco:<input type="text" id="Diametro"></label>
+                <label >Historico de podas:<input type="text" id="Historico_depodas"></label>
+                <button onclick="adicionarPlanta()">Cadastrar</button>
+            </div>
+                
+            <div class="container03">
+                <h2>Diário de Cultivo</h2>
+                <input type="date" id="date">
+                <textarea id="notes" placeholder="Escreva suas observações..."></textarea>
+                <input type="file" id="photo" accept="image/*">
+                <button onclick="addEntry()">Adicionar Registro</button>
+                <div id="entries"></div>
+            </div>
+
+
+        </div>
+
     </main>
-   <footer>
-
+    <footer>
     </footer>
-</body>
 
+</body>         
 <script>
     function adicionarPlanta() {
     let nome = document.getElementById('nome').value;
     let especie = document.getElementById('especie').value;
     let idade = document.getElementById('idade').value;
-    
+    let Altura= documnent.getElementById('Altura')
+    let diametro= document.getElementById('Diametro')
+    let historico=document.getElementById('Historico_depodas')   
+
     if (nome && especie && idade) {
         let tabela = document.getElementById('listaPlantas');
         let linha = tabela.insertRow();
@@ -82,10 +93,15 @@
         document.getElementById('nome').value = '';
         document.getElementById('especie').value = '';
         document.getElementById('idade').value = '';
+        document.getElementById('Altura').value= '';
+        document.getElementById('Diametro').value='';
+        document.getElementById('Historico_depodas').value='';
+       
     } else {
         alert('Preencha todos os campos!');
     }
 }
+
 // diario de cultivo
 function addEntry() {
             let date = document.getElementById("date").value;
@@ -117,5 +133,28 @@ function addEntry() {
             document.getElementById("photo").value = "";
         }
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+            
+           
+
+
+
+
+
+        
+        
+        
+
 
 </html>
